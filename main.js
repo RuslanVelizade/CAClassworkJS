@@ -13,18 +13,22 @@ console.log( personalInfo);
 let length = 16; 
 console.log(typeof length);
 let color = "Brown";
+console.log(typeof color);
 let float = "12.5";
+console.log(typeof float);
 let like = true;
+console.log(typeof like);
 
 let x = {
     firstName: " Nick",
     color: "Red",
 };
+console.log(typeof x);
 // task 3
 let distance = 8600;
 let speed = 120;
 let duration = distance/speed;
-console.log("The car will arrive in Chine in " + duration + " minutes");
+console.log("The car will arrive in China in " + duration + " minutes");
 // task 4
 let born = 2003;
 let now  = 2023;
