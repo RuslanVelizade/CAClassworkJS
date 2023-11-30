@@ -1,0 +1,14 @@
+body {
+    background-color: white;
+  color: black;
+}
+.dark-mode{
+    color: white;
+    background-color: black;
+}
+/* .header {
+    background-color: transparent;
+}
+section {
+    background-color: transparent;
+} */

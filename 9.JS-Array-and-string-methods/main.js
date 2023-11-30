@@ -50,17 +50,23 @@ const array = [1, 2, 3, 4, 5, 6, 7, 8];
 const length = 4;
 
 function splitIntoChunk(arr, length) {
+<<<<<<< HEAD
 let array = [];
     for (let i = 0; i < arr.length; i++) {
         array.push(arr.slice(1, i = length));
         
     }
     return array;
+=======
+    
+    return arr;
+>>>>>>> 4d2f0f1b50c8626df3f7b5b03fd83d65f7bf020c
 }
 
 
 
 console.log(splitIntoChunk(array, length)); // [ [ 1, 2, 3, 4 ], [ 5, 6, 7, 8 ] ]
+<<<<<<< HEAD
 //TASK 6
 function longestWord(prog) {
     for (let i = 0; i < prog.length; i++) {
@@ -71,3 +77,5 @@ function longestWord(prog) {
 console.log(longestWord("Hello word hi programmers"));
 
 // Ən uzun sözü tapın.  ======>> programmers
+=======
+>>>>>>> 4d2f0f1b50c8626df3f7b5b03fd83d65f7bf020c
