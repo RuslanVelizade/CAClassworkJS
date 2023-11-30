@@ -129,3 +129,6 @@ const company = [
 const employee = company.map(employee => `${employee.firstName} ${employee.lastName} illik ${employee.salary}$ maas alir ve ${employee.yearsWorked} ildir calisir`);
 console.log(employee);
 
+
+
+

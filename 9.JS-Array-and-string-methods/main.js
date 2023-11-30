@@ -49,11 +49,25 @@ isPalindrome("hello")
 const array = [1, 2, 3, 4, 5, 6, 7, 8];
 const length = 4;
 
-function splitIntoChunk(arr, len) {
-    
-    return arr;
+function splitIntoChunk(arr, length) {
+let array = [];
+    for (let i = 0; i < arr.length; i++) {
+        array.push(arr.slice(1, i = length));
+        
+    }
+    return array;
 }
 
 
 
-console.log(splitIntoChunk(array, leng)); // [ [ 1, 2, 3, 4 ], [ 5, 6, 7, 8 ] ]
+console.log(splitIntoChunk(array, length)); // [ [ 1, 2, 3, 4 ], [ 5, 6, 7, 8 ] ]
+//TASK 6
+function longestWord(prog) {
+    for (let i = 0; i < prog.length; i++) {
+        
+        
+    }
+}
+console.log(longestWord("Hello word hi programmers"));
+
+// Ən uzun sözü tapın.  ======>> programmers
