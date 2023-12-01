@@ -485,7 +485,7 @@ drawTable(arr);
 let search = document.querySelector("#search");
 search.addEventListener("keyup", function (param) {
   let filtered = arr.filter((item) =>
-    `${item.email} , ${item.first_name}, ${item.last_name}`
+    `${item.email} , ${item.first_name}, ${item.last_name}, ${item.gender}`
       .toLocaleLowerCase()
       .includes(param.target.value)
   );

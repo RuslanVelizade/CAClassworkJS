@@ -10,4 +10,4 @@ form.addEventListener("submit", (e) => {
     let userName = document.querySelector(".username")
     let email = document.querySelector(".email")
     let password = document.querySelector(".password")
-})
+});

@@ -1,0 +1,24 @@
+div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 10px;
+}
+table, th, td {
+ border: 1px solid black;
+}
+
+.fa-arrow-down {
+
+}
+.fa-arrow-up {
+
+}
+
+.fa-down {
+
+}
+.fa-up {
+    display: none;  
+}

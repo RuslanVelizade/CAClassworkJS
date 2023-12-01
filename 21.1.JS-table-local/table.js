@@ -701,3 +701,56 @@ let users = [
     },
     ];
 
+let tBody = document.querySelector("tbody");
+
+function createTable(data) {
+    tBody.innerHTML = "";
+    data.forEach((item) =>{
+        let trItem = document.createElement("tr")
+        trItem.innerHTML = `
+        <td>${item.id}</td>
+        <td>${item.first_name} ${item.last_name}</td> 
+        <td>${item.email}</td>
+        <td>${item.gender}</td>`;
+
+        tBody.append(trItem);
+    });
+
+    
+}
+createTable(users);
+
+let search = document.querySelector("#search");
+search.addEventListener("input", function (param) {
+    let filtered = users.filter((item)=>
+    `${item.email}, ${item.first_name}, ${item.last_name}, ${item.gender}`
+    .toLocaleLowerCase()
+    .includes(param.target.value)
+   
+);
+createTable(filtered);
+});
+
+let faDown = document.querySelector(".fa-arrow-down");
+let faUp = document.querySelector(".fa-arrow-up");
+faUp.classList.add(".fa-up");
+faDown.addEventListener("click", function () {
+    faUp.classList.remove(".fa-up");
+    let sortFadown = users.sort((a, b) => b.id - a.id);
+    createTable(sortFadown);
+    
+    faDown.classList.remove("fa-arrow-down");
+    faUp.classList.add("fa-arrow-up");
+//   faDown.addEventListener("click", function () {
+//     faUp.classList.add(".fa-up");
+//   })
+
+});
+ 
+faUp.addEventListener("click", function () {
+    let sortFaup = users.sort((a, b) => a.id - b.id);
+  createTable(sortFaup);
+  faUp.classList.remove("fa-arrow-up");
+  faDown.classList.add("fa-arrow-down");
+    
+});
