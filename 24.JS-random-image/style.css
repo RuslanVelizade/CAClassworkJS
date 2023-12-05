@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(14, 22, 133) , yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px;
+}
+
+.container {
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+h1{
+    color: white;
+}
+img {
+    width: 270px;
+    height: 270px;
+    border-radius: 10%;
+    font-size: 100%;
+}

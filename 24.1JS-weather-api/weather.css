@@ -1,0 +1,9 @@
+body {
+    background: linear-gradient(90deg,yellow, orange, green, rgb(121, 121, 238), blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .forecast {
+    background-color: purple;
+  }
