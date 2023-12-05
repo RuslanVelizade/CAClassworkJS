@@ -1,9 +1,35 @@
 body {
-    background: linear-gradient(90deg,yellow, orange, green, rgb(121, 121, 238), blue);
+    background: linear-gradient(90deg, orange, rgb(121, 121, 238), blue);
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 150px;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
   .forecast {
     background-color: purple;
+    padding: 50px;
+  }
+  input{
+    height: 30px;
+    margin-bottom: 10px;
+  }
+  .button{
+    text-align: center;
+  }
+  button{
+    color: aliceblue;
+    background-color: teal;
+    padding: 10px;
+
+  }
+  .overcast {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(219, 167, 102);
+
   }
