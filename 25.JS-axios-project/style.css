@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+
+.buttons{
+    gap: 40px;
+
+}
+
+button{
+
+}
+.btn{
+    border: 1px solid darkblue;
+    border-radius: 20px;
+    padding: 20px;
+    color: darkblue;
+}
+
+.btn:hover{
+    background-color: darkblue;
+    color: white;
+    cursor: pointer;
+}
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+#products{
+    display: flex;
+    justify-content: space-around;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    gap: 40px;
+    
+
+
+    
+}
+
+.card {
+    width: 23%;
+    
+    padding: 24px;
+    margin-bottom: 32px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+img{
+    max-width: 100%;
+    border-radius: 10px;
+}
