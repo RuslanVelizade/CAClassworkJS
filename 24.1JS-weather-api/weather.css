@@ -12,7 +12,7 @@ body {
   }
   .forecast {
     background-color: purple;
-    padding: 50px;
+    padding: 40px;
   }
   input{
     height: 30px;
@@ -25,6 +25,8 @@ body {
     color: aliceblue;
     background-color: teal;
     padding: 10px;
+    cursor: pointer;
+    border: 2px solid  rgb(219, 167, 102);
 
   }
   .overcast {
@@ -32,4 +34,8 @@ body {
     justify-content: center;
     background-color: rgb(219, 167, 102);
 
+  }
+
+  button:hover {
+    opacity: 0.8;
   }
