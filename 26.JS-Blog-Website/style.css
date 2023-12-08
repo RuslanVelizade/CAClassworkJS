@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+}
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+.input {
+    height: 30%;
+}
+
+.read{
+    display: flex;
+}
+
