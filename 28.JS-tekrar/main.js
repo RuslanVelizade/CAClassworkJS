@@ -36,14 +36,14 @@ const person = {
   },
 };
 
-// const  { firstName, languageInfo:{ eng, rus }, ...otherInfo} = person;
+const  { firstName, languageInfo:{ eng, rus }, ...otherInfo} = person;
 
 
 // person adlı object-dən firstName-i, languageInfo-dan eng və rus property-ni destructing edin, əlavə olaraq
 // personda yerdə qalan bütün property-ləri otherInfo adı altında rest operatoru ilə bir dəyişənə çıxarın.
 
-// console.log(eng); // "Advance"
-// console.log(otherInfo); // {lastName: 'Doe', city: 'Ganja', website: 'code.edu.az'}
+console.log(eng, rus); // "Advance"
+console.log(otherInfo); // {lastName: 'Doe', city: 'Ganja', website: 'code.edu.az'}
 
 
 // -------------------------
@@ -68,6 +68,11 @@ console.log(Object.values(human));
 //     [lastName: 'Pam']
 //     [age:26]
 //     [city: 'Poland']
+
+console.log(`[firstName: ${human.firstName}]`);
+console.log(`[lastName: ${human.lastName}]`);
+console.log(`[age: ${human.age}]`);
+console.log(`[city: ${human.city}]`);
 
 
 
@@ -110,15 +115,17 @@ function isPalindrome(string) {
 
     let len = string.length;
 
-    for (let i = 0; i < len; i++) {
-        if (len[i]===len[len-1-i]) {
-            console.log("The word is palindrome");
+    for (let i = 0; i < len/2; i++) {
+        if (string[i]!==string[len-1-i]) {
+            return "The word isn't palindrome";
+        }else {
+            return "The word is palindrome";
         }
         
     }
 }
 
-isPalindrome("hello");
+console.log(isPalindrome("hello"));
 
 
 // ------------------
@@ -126,9 +133,25 @@ isPalindrome("hello");
 // TASK 6
 
 
-// console.log(longestWord("Hello word hi programmers"));
+
+
 
 // Ən uzun sözü tapın.  ======>> programmers
+
+function longestWord(text) {
+    let words = text.split(' ');
+
+    let max = words[0].length;
+    let word = words[0];
+   for (let i = 0; i < words.length; i++) {
+    if (words[i].length>max) {
+        max = words[i].length
+        word = words[i]
+    }
+   }
+   return word;
+}
+console.log(longestWord("Hello word hi programmers"));
 
 
 // ------------------
@@ -144,6 +167,12 @@ const persons = [
 // find metodu vasitəsilə array-in içindəki, yaşı 30-dan yuxarı olan ilk şəxsi "firstPerson" adlı dəyişkənə
 // mənimsədib console-a çıxardın. ====> { name: 'Aysu', age: 32 }
 
+let firstPerson = persons.find((item)=>item.age>30);
+console.log(firstPerson);
+
 // ------------------------------ part II
 
 // tapdığınız objectin index-ni də ikinci bir console-da çıxardın.(metod ilə)
+
+let indexOfPerson = persons.findIndex((item)=>item.age>30);
+console.log(indexOfPerson);
