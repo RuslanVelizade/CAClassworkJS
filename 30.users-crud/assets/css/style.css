@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}  
+
+header {
+    background-color: rgb(226, 181, 125);
+}
+
+.container {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}  
+
+h2 {
+    color: rgb(71, 38, 14); 
+}
+
+ul {
+    display: flex;
+    gap: 50px;
+}
+
+.nav {
+    color: rgb(71, 38, 14);
+    
+}  
+
+#image {
+    
+    background-attachment: fixed;
+}   
+
+.bg1 {
+    width: 100%;
+}
+#table-section {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    
+}
+table {
+    
+    
+}
+
+.delete {
+    background-color: red;
+}
+
+.fav-button {
+    background-color: blue;
+}  
+.three {
+
+    height: 80%;
+}
+
+ .delete, .fav-button {
+    height: 100%;
+    padding: 5px;
+    color: white;
+}
+
+.edit {
+    text-decoration: none;
+    padding: 8.5px;
+    background-color: green;
+    color: white;
+}
+
+.userphoto {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
