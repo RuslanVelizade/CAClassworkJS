@@ -40,9 +40,17 @@ drawTable();
  let delButton = document.querySelector(".delete")
 async function deleteUserData(id, delButton) {
     if (confirm("Are you sure to remove it?")) {
-        delButton.closest("tr").remove();
-        await axios.delete(`${BASE_URL}/${endPoint}/${id}`)
-        localStorage.removeItem("obj")
+       let del = delButton.closest("tr");
+       del.remove();
+       try {
+        await axios.delete(`${BASE_URL}/users/${id}`)
+        const storedData = JSON.parse(localStorage.getItem("obj")) || [];
+            const updatedData = storedData.filter(item => item.id !== id);
+            localStorage.setItem("obj", JSON.stringify(updatedData));
+       }catch (error) {
+        console.error("Error deleting data:", error);
+        // If there's an error, you might want to handle it accordingly
+    }
     }
 }
 
@@ -59,7 +67,7 @@ async function getUserData() {
         allInputs[2].value = response.data.email;
         allInputs[3].value = response.data.photo;
     } catch (error) {
-        console.log(error);
+        console.log("Error deleting data: ", error);
     }
 }
 
