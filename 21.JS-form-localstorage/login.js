@@ -20,7 +20,7 @@ button.value = "Submit";
 button.innerText = "Login";
 
 let span = document.createElement("span");
-let text = document.createTextNode("Already have an account?");
+let text = document.createTextNode("Don't have an account yet?");
 let link = document.createElement("a");
 link.href = "signup.html";
 link.textContent = "Signup";

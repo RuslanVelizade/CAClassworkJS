@@ -6,59 +6,97 @@ let form = document.querySelector("form");
 let inputFirst = document.querySelector("#firstName");
 let inputLast = document.querySelector("#lastName");
 let inputEmail = document.querySelector("#email");
-let inputPhoto = document.querySelector("#inputGroupFile04")
+let inputPhoto = document.querySelector("#inputGroupFile04");
 
-let allInputs = document.querySelector(".form-control");
+let allInputs = document.querySelectorAll(".form-control");
 
-const BASE_URL = 'http://localhost:2020';
+const BASE_URL = "http://localhost:2020";
 
 async function getData(users) {
-    
-    let response = await axios(`${BASE_URL}/${users}`);
-    console.log(response);
-    
+  let response = await axios(`${BASE_URL}/${users}`);
+  console.log(response);
 }
 getData("users");
 
 data = JSON.parse(localStorage.getItem("obj")) || [];
 
 form.addEventListener("submit", function (event) {
-    event.preventDefault();
+  event.preventDefault();
+  let dateValue = new Date();
 
-    let bool = data.some(
-        (item) => {
-            item.firstName === item.inputFirst || item.lastName === item.inputLast
 
-        });
-    if (!bool) {
-        let object = {
-            firstName: inputFirst.value,
-            lastName: inputLast.value,
-            email: inputEmail.value,
-            userPhoto: inputPhoto.value,
-        }
-        data.push(object);
-        localStorage.setItem("obj", JSON.stringify(data));
+let object = {
+          firstName: inputFirst.value,
+          lastName: inputLast.value,
+          email: inputEmail.value,
+          date: dateValue.toLocaleString(),
+          userPhoto: `./assets/img/${allInputs[3].value.split("\\")[2]}`
+        };
 
+        
+  if (
+    allInputs[0].value &&
+    allInputs[1].value &&
+    allInputs[2].value &&
+    `./assets/img/${allInputs[3].value.split("\\")[2]}`
+    ) {
+    if (!id) {
+      addBlog(object);
     } else {
-        window.alert("First Name,Last Name or email may be wrong!!")
+      updateBlog(object);
     }
+  } else {
+    alert("You must fill in all fields.");
+  }
+
+  allInputs.forEach((item) => (item.value = " "));
+  
 });
 
+async function addBlog(obj) {
+  try {
+    await axios.post(`${BASE_URL}/users`, obj);
+  window.location = "index.html";
+  } catch (error) {
+    console.log(error);
+  }
+}
+async function updateBlog(obj) {
+  try {
+    await axios.patch(`${BASE_URL}/users/${id}`, obj);
+  window.location = "index.html";
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+  
+
+
+// if (id) {
+//   axios(`${BASE_URL}/users/${id}`).then((response) => {
+//     console.log(response.data);
+//     allInputs[0].value = response.data.name;
+//     allInputs[1].value = response.data.surname;
+//     allInputs[2].value = response.data.email;
+//   });
+// }
 
 async function getUserData() {
     try {
         let response = await axios(`${BASE_URL}/users/${id}`);
         console.log(response.data);
-        allInputs[0].value  = response.data.name
-        allInputs[1].value  = response.data.surname
-        allInputs[2].value  = response.data.email
-        allInputs[3].value  = response.data.photo
+        allInputs[0].value = response.data.name;
+        allInputs[1].value = response.data.surname;
+        allInputs[2].value = response.data.email;
+        
     } catch (error) {
         console.log(error);
     }
 }
 
 id && getUserData();
+
+
 
 

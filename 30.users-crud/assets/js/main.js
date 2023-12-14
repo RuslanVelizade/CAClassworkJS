@@ -42,12 +42,13 @@ async function deleteUserData(id, delButton) {
     if (confirm("Are you sure to remove it?")) {
         delButton.closest("tr").remove();
         await axios.delete(`${BASE_URL}/${endPoint}/${id}`)
+        localStorage.removeItem("obj")
     }
 }
 
 
 
-let allInputs = document.querySelector(".form-control");
+let allInputs = document.querySelectoraAll(".form-control");
 
 async function getUserData() {
     try {
