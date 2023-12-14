@@ -71,6 +71,25 @@
       "date": "14.12.2023 11:32:40",
       "userPhoto": "./assets/img/15 gettyimages-1039881468_resized.jpg",
       "id": 10
+<<<<<<< HEAD
+=======
+    },
+    {
+      "firstName": "Yoshio",
+      "lastName": "Harvey",
+      "email": "busu@mailinator.com",
+      "date": "14.12.2023 12:18:13",
+      "userPhoto": "./assets/img/WhatsApp Image 2023-11-26 at 21.54.25_f8baee1f.jpg",
+      "id": 11
+    },
+    {
+      "firstName": "Chanda",
+      "lastName": "Kaufman",
+      "email": "poxipoh@mailinator.com",
+      "date": "12/14/2023, 3:37:00 PM",
+      "userPhoto": "./assets/img/Chef.jpeg",
+      "id": 12
+>>>>>>> 96ee952889b769f870f1dc4e72d90b3e5efc00d5
     }
   ]
 }

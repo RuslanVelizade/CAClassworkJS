@@ -10,6 +10,8 @@ async function getData(endPoint) {
 }
 getData("users");
 
+data = JSON.parse(localStorage.getItem("obj")) || [];
+
 function drawTable(data) {
     tBody.innerHTML = "";
 
@@ -40,6 +42,7 @@ drawTable();
  let delButton = document.querySelector(".delete")
 async function deleteUserData(id, delButton) {
     if (confirm("Are you sure to remove it?")) {
+<<<<<<< HEAD
        let del = delButton.closest("tr");
        del.remove();
        try {
@@ -51,6 +54,14 @@ async function deleteUserData(id, delButton) {
         console.error("Error deleting data:", error);
         // If there's an error, you might want to handle it accordingly
     }
+=======
+        delButton.closest("tr").remove();
+        await axios.delete(`${BASE_URL}/${endPoint}/${id}`)
+        // for (let i = 0; i < tBody.length; i++) {
+        //     localStorage.removeItem("obj", tBody[i]);   
+        //     }
+        tBody.forEach((item) => localStorage.removeItem("obj", item));
+>>>>>>> 96ee952889b769f870f1dc4e72d90b3e5efc00d5
     }
 }
 

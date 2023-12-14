@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}  
+
+.header {
+    display: flex;
+    justify-content: center;
+}  
+
+h1 {
+    color: white;
+}
+
+header, section {
+    background-color: black;
+}
+
+.input-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 94vh;
+} 
+ 
+.form-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 30px;
+    gap: 30px;
+    border-radius: 10px;
+}
+
+
+
+input {
+    padding: 15px;
+}
