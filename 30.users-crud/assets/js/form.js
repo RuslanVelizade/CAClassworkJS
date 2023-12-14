@@ -25,31 +25,45 @@ form.addEventListener("submit", function (event) {
   let dateValue = new Date();
 
 
-let object = {
+
+
+        let bool = data.some(
+          (item) =>
+              item.firstName === inputFirst.value || item.email === inputEmail.value
+      );
+      if (!bool) {
+        let object = {
           firstName: inputFirst.value,
           lastName: inputLast.value,
           email: inputEmail.value,
           date: dateValue.toLocaleString(),
           userPhoto: `./assets/img/${allInputs[3].value.split("\\")[2]}`
         };
-
+         
+          data.push(object);
+        localStorage.setItem("obj", JSON.stringify(data));
         
-  if (
-    allInputs[0].value &&
-    allInputs[1].value &&
-    allInputs[2].value &&
-    `./assets/img/${allInputs[3].value.split("\\")[2]}`
-    ) {
-    if (!id) {
-      addBlog(object);
-    } else {
-      updateBlog(object);
-    }
-  } else {
-    alert("You must fill in all fields.");
-  }
-
-  allInputs.forEach((item) => (item.value = " "));
+        if (
+          allInputs[0].value &&
+          allInputs[1].value &&
+          allInputs[2].value &&
+          `./assets/img/${allInputs[3].value.split("\\")[2]}`
+          ) {
+          if (!id) {
+            addBlog(object);
+          } else {
+            updateBlog(object);
+          }
+        } else {
+          alert("You must fill in all fields.");
+        }
+      
+        allInputs.forEach((item) => (item.value = " "));
+          
+      } 
+      
+        
+  
   
 });
 

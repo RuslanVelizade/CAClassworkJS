@@ -10,6 +10,8 @@ async function getData(endPoint) {
 }
 getData("users");
 
+data = JSON.parse(localStorage.getItem("obj")) || [];
+
 function drawTable(data) {
     tBody.innerHTML = "";
 
@@ -42,7 +44,10 @@ async function deleteUserData(id, delButton) {
     if (confirm("Are you sure to remove it?")) {
         delButton.closest("tr").remove();
         await axios.delete(`${BASE_URL}/${endPoint}/${id}`)
-        localStorage.removeItem("obj")
+        // for (let i = 0; i < tBody.length; i++) {
+        //     localStorage.removeItem("obj", tBody[i]);   
+        //     }
+        tBody.forEach((item) => localStorage.removeItem("obj", item));
     }
 }
 
