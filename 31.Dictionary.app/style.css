@@ -46,3 +46,15 @@ header, section {
 input {
     padding: 15px;
 }
+
+.audio-div {
+ display: flex;
+ justify-content: space-between;
+ padding: 0 10px;
+
+}
+
+.definition {
+    padding: 10px;
+    border-left: 3px solid orange;
+}

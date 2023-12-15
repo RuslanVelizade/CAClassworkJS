@@ -37,7 +37,7 @@ form.addEventListener("submit", function (event) {
           lastName: inputLast.value,
           email: inputEmail.value,
           date: dateValue.toLocaleString(),
-          userPhoto: `./assets/img/${allInputs[3].value.split("\\")[2]}`
+          userphoto: `./assets/img/${allInputs[3].value.split("\\")[2]}`
         };
          
           data.push(object);
@@ -60,7 +60,10 @@ form.addEventListener("submit", function (event) {
       
         allInputs.forEach((item) => (item.value = " "));
           
-      } 
+      } else {
+        // Eğer bool true ise (yani aynı isim veya email'e sahip başka bir kullanıcı varsa) kullanıcıya bir uyarı verilebilir.
+        alert("A user with the same name or email already exists.");
+      }
       
         
   
