@@ -24,7 +24,7 @@ function drawCard(countriesData) {
 
     countriesData.forEach((element) => {
         cardContainer.innerHTML += `
-   <a class="card" href = "details.html?v3.1/name=${element.name}">
+   <a class="card" href = "details.html?name=${element.name}">
    <img class="flag" src="${element.flags.svg}"></img>
    <div class="text">
    <h5>${element.name}</h5>
@@ -34,6 +34,7 @@ function drawCard(countriesData) {
    </div></a>
     `
     });
+    
 }
 
  let search = document.querySelector("#search");
@@ -60,7 +61,7 @@ lightButton.addEventListener("click", function (event) {
 });
 
 
-if (search) {
+
     search.addEventListener("input", function (event) {
         event.preventDefault();
         let searchText = event.target.value.toLowerCase();
@@ -68,8 +69,9 @@ if (search) {
             country.name.toLowerCase().includes(searchText)
         );
         drawCard(filteredData);
+        
     });
-}
+
 
 
 if (select) {
