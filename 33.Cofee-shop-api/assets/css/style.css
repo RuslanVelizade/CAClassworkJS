@@ -1,0 +1,27 @@
+#addproduct {
+    background-color: black;
+    height: 100vh;
+    display:  flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.header-h1 {
+color: white;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.coffee-img {
+    width: 40px;
+    height: 70px;
+}
+.icon-td {
+    
+}
+.fa-trash {
+    color: red;
+}
+.fa-pencil {
+    color: green;
+}

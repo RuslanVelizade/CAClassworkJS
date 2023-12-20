@@ -1,0 +1,92 @@
+{
+    "coffe_products": [
+      {
+        "image": "https://img.freepik.com/free-photo/delicious-coffee-beans-cup_23-2150691429.jpg",
+        "name": "Azerbaijani coffee",
+        "description": "A mild casy drinking coffee, perfect for a gentle, morning boost. A whimsical blend of cinnamon",
+        "price": "20",
+        "rating": "1",
+        "id": 1
+      },
+      {
+        "image": "https://img.freepik.com/free-photo/delicious-coffee-beans-cup_23-2150691429.jpg",
+        "name": "Turkish coffee",
+        "description": "A mild casy drinking coffee, perfect for a gentle, morning boost. A whimsical blend of cinnamon",
+        "price": "20",
+        "rating": "2",
+        "id": 2
+      },
+      {
+        "image": "https://img.freepik.com/free-photo/delicious-coffee-beans-cup_23-2150691429.jpg",
+        "name": "American coffee",
+        "description": "A mild casy drinking coffee, perfect for a gentle, morning boost. A whimsical blend of cinnamon",
+        "price": "20",
+        "rating": "3",
+        "id": 3
+      },
+      {
+        "image": "https://img.freepik.com/free-photo/delicious-coffee-beans-cup_23-2150691429.jpg",
+        "name": "French coffee",
+        "description": "A mild casy drinking coffee, perfect for a gentle, morning boost. A whimsical blend of cinnamon",
+        "price": "20",
+        "rating": "4",
+        "id": 4
+      },
+      {
+        "image": "https://img.freepik.com/free-photo/delicious-coffee-beans-cup_23-2150691429.jpg",
+        "name": "Italian coffee",
+        "description": "A mild casy drinking coffee, perfect for a gentle, morning boost. A whimsical blend of cinnamon",
+        "price": "20",
+        "rating": "5",
+        "id": 5
+      },
+      {
+        "image": "https://img.freepik.com/free-photo/delicious-coffee-beans-cup_23-2150691429.jpg",
+        "name": "Russian coffee",
+        "description": "A mild casy drinking coffee, perfect for a gentle, morning boost. A whimsical blend of cinnamon",
+        "price": "20",
+        "rating": "6",
+        "id": 6
+      },
+      {
+        "image": "https://img.freepik.com/free-photo/delicious-coffee-beans-cup_23-2150691429.jpg",
+        "name": "Indian coffee",
+        "description": "A mild casy drinking coffee, perfect for a gentle, morning boost. A whimsical blend of cinnamon",
+        "price": "20",
+        "rating": "7",
+        "id": 7
+      },
+      {
+        "image": "https://img.freepik.com/free-photo/delicious-coffee-beans-cup_23-2150691429.jpg",
+        "name": "German coffee",
+        "description": "A mild casy drinking coffee, perfect for a gentle, morning boost. A whimsical blend of cinnamon",
+        "price": "20",
+        "rating": "8",
+        "id": 8
+      },
+      {
+        "image": "https://img.freepik.com/free-photo/delicious-coffee-beans-cup_23-2150691429.jpg",
+        "name": "Brazilian coffee",
+        "description": "A mild casy drinking coffee, perfect for a gentle, morning boost. A whimsical blend of cinnamon",
+        "price": "20",
+        "rating": "9",
+        "id": 9
+      },
+      {
+        "image": "https://img.freepik.com/free-photo/delicious-coffee-beans-cup_23-2150691429.jpg",
+        "name": "Kenya coffee",
+        "description": "A mild casy drinking coffee, perfect for a gentle, morning boost. A whimsical blend of cinnamon",
+        "price": "20",
+        "rating": "10",
+        "id": 10
+      },
+      {
+        "image": "https://img.freepik.com/free-photo/delicious-coffee-beans-cup_23-2150691429.jpg",
+        "name": "Kenya coffee",
+        "description": "A mild casy drinking coffee, perfect for a gentle, morning boost. A whimsical blend of cinnamon",
+        "price": "20",
+        "rating": "11",
+        "id": 11
+      }
+    ]
+}
