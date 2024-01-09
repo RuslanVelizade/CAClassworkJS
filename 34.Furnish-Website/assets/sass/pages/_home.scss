@@ -1,0 +1,218 @@
+#discover {
+  width: 100%;
+  background-color: #d4eaf5;
+  // position: absolute;
+  // z-index: 995;
+  .discover {
+    display: flex;
+
+    .discover-left {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      padding: 180px 0;
+      row-gap: 20px;
+      h1 {
+        color: #052c43;
+        font-weight: 200;
+        font-size: 45px;
+        line-height: 1.2;
+        span {
+          font-weight: 700;
+        }
+      }
+      p {
+        color: rgba(0, 0, 0, 0.4);
+      }
+      a {
+        color: #267aa4;
+        padding: 20px 30px;
+        background-color: white;
+        border-radius: 50px;
+        font-size: 13px;
+        font-weight: 600;
+      }
+    }
+    .discover-right {
+      // position: absolute;
+      // z-index: 997;
+      width: 50%;
+      background-image: url("/34.Furnish-Website/assets/image/bg_2.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}
+#services {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  gap: 10px;
+  .service-card {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    font-family: "Poppins", Arial, sans-serif;
+    &:nth-child(1) {
+      background-color: #f5ebeb;
+    }
+    &:nth-child(2) {
+      background-color: #dcebdd;
+    }
+    &:nth-child(3) {
+      background-color: #f5efd8;
+    }
+    &:nth-child(4) {
+      background-color: #f4e6d8;
+    }
+    .service-title {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.5;
+      color: #052c43;
+    }
+    .service-description {
+      font-size: 16px;
+      line-height: 1.8;
+      font-weight: 400;
+      color: gray;
+    }
+    .service-icon {
+      &.fa-regular .fa-handshake {
+      }
+    }
+  }
+}
+#about {
+  background-image: url("/34.Furnish-Website/assets/image/bg_4.jpg");
+  background-size: cover;
+  background-position: center;
+  .about {
+    display: flex;
+    justify-content: flex-end;
+    .about-right {
+      width: 50%;
+      padding: 150px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      h6 {
+        color: rgba(0, 0, 0, 0.3);
+        font-weight: 600;
+        font-size: 13px;
+        letter-spacing: 1px;
+      }
+      h1 {
+        font-weight: 500;
+        line-height: 1.4;
+        color: #052c43;
+        font-size: 40px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 1.8;
+        font-weight: 400;
+        color: gray;
+      }
+      a {
+        padding-top: 1.5rem;
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+        span {
+          width: 80px;
+          height: 80px;
+          background: #cf7500;
+          border-radius: 50%;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .fa-play {
+            color: #fff;
+          }
+        }
+        p {
+          color: #cf7500;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+#furniture-collection {
+    .furniture-collection-top {
+        padding-top: 150px;
+        padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+        span {
+            margin-bottom: 5px;
+    color: rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 13px;
+        }
+        h1 {
+            font-weight: 500;
+    line-height: 1.4;
+    font-size: 40px;
+    color: #052c43;
+        }
+    }
+    .furniture-collection-bottom {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        .imagesDiv {
+            display: flex;
+            align-items: flex-end;
+            padding: 20px;
+            background-size: cover;
+            background-position: center;
+            transition: filter 0.3s ease;
+            transition: opacity 0.3s ease;
+            &:nth-child(1) {
+                width: 22%;
+                background-image: url("../image/gallery-1.jpg");
+            }
+            &:nth-child(2) {
+                width: 22%;
+                background-image: url("../image/gallery-2.jpg.webp");
+            }
+            &:nth-child(3) {
+                width: 45.7%;
+                background-image: url("../image/gallery-3.jpg");
+            }
+            &:nth-child(4) {
+                width: 36%;
+                background-image: url("../image/gallery-4.jpg");
+            }
+            &:nth-child(5) {
+                width: 25%;
+                background-image: url("../image/gallery-5.jpg");
+            }
+            &:nth-child(6) {
+                width: 28.8%;
+                background-image: url("../image/gallery-6.jpg");
+            }
+            div {
+                
+                 opacity: 0;
+            }
+            &:hover {
+                filter: contrast(60%);
+                cursor: pointer;
+                div {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

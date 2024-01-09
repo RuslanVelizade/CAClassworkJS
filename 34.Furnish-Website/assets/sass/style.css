@@ -1,0 +1,302 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v5.0.2 | 20191019
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+}
+
+menu, ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  text-decoration: none;
+}
+
+body {
+  position: relative;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 1199px) {
+  .container {
+    padding: 0 5%;
+  }
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+  padding: 40px 0;
+}
+header .header {
+  display: flex;
+  justify-content: space-between;
+}
+header .header nav ul {
+  display: flex;
+  gap: 50px;
+}
+
+#discover {
+  width: 100%;
+  background-color: #d4eaf5;
+}
+#discover .discover {
+  display: flex;
+}
+#discover .discover .discover-left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 180px 0;
+  row-gap: 20px;
+}
+#discover .discover .discover-left h1 {
+  color: #052c43;
+  font-weight: 200;
+  font-size: 45px;
+  line-height: 1.2;
+}
+#discover .discover .discover-left h1 span {
+  font-weight: 700;
+}
+#discover .discover .discover-left p {
+  color: rgba(0, 0, 0, 0.4);
+}
+#discover .discover .discover-left a {
+  color: #267aa4;
+  padding: 20px 30px;
+  background-color: white;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 600;
+}
+#discover .discover .discover-right {
+  width: 50%;
+  background-image: url("/34.Furnish-Website/assets/image/bg_2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#services {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  gap: 10px;
+}
+#services .service-card {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  font-family: "Poppins", Arial, sans-serif;
+}
+#services .service-card:nth-child(1) {
+  background-color: #f5ebeb;
+}
+#services .service-card:nth-child(2) {
+  background-color: #dcebdd;
+}
+#services .service-card:nth-child(3) {
+  background-color: #f5efd8;
+}
+#services .service-card:nth-child(4) {
+  background-color: #f4e6d8;
+}
+#services .service-card .service-title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #052c43;
+}
+#services .service-card .service-description {
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: gray;
+}
+#about {
+  background-image: url("/34.Furnish-Website/assets/image/bg_4.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#about .about {
+  display: flex;
+  justify-content: flex-end;
+}
+#about .about .about-right {
+  width: 50%;
+  padding: 150px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#about .about .about-right h6 {
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+#about .about .about-right h1 {
+  font-weight: 500;
+  line-height: 1.4;
+  color: #052c43;
+  font-size: 40px;
+}
+#about .about .about-right p {
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: gray;
+}
+#about .about .about-right a {
+  padding-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+#about .about .about-right a span {
+  width: 80px;
+  height: 80px;
+  background: #cf7500;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about .about .about-right a span .fa-play {
+  color: #fff;
+}
+#about .about .about-right a p {
+  color: #cf7500;
+  font-weight: 600;
+}
+
+#furniture-collection .furniture-collection-top {
+  padding-top: 150px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+#furniture-collection .furniture-collection-top span {
+  margin-bottom: 5px;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+#furniture-collection .furniture-collection-top h1 {
+  font-weight: 500;
+  line-height: 1.4;
+  font-size: 40px;
+  color: #052c43;
+}
+#furniture-collection .furniture-collection-bottom {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+#furniture-collection .furniture-collection-bottom .imagesDiv {
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  transition: filter 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+#furniture-collection .furniture-collection-bottom .imagesDiv:nth-child(1) {
+  width: 22%;
+  background-image: url("../image/gallery-1.jpg");
+}
+#furniture-collection .furniture-collection-bottom .imagesDiv:nth-child(2) {
+  width: 22%;
+  background-image: url("../image/gallery-2.jpg.webp");
+}
+#furniture-collection .furniture-collection-bottom .imagesDiv:nth-child(3) {
+  width: 45.7%;
+  background-image: url("../image/gallery-3.jpg");
+}
+#furniture-collection .furniture-collection-bottom .imagesDiv:nth-child(4) {
+  width: 36%;
+  background-image: url("../image/gallery-4.jpg");
+}
+#furniture-collection .furniture-collection-bottom .imagesDiv:nth-child(5) {
+  width: 25%;
+  background-image: url("../image/gallery-5.jpg");
+}
+#furniture-collection .furniture-collection-bottom .imagesDiv:nth-child(6) {
+  width: 28.8%;
+  background-image: url("../image/gallery-6.jpg");
+}
+#furniture-collection .furniture-collection-bottom .imagesDiv div {
+  opacity: 0;
+}
+#furniture-collection .furniture-collection-bottom .imagesDiv:hover {
+  filter: contrast(60%);
+  cursor: pointer;
+}
+#furniture-collection .furniture-collection-bottom .imagesDiv:hover div {
+  opacity: 1;
+}/*# sourceMappingURL=style.css.map */
