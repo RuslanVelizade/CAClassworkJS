@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 1199px) {
+  .container {
+    padding: 0 5%;
+  }
+}
+
+body {
+  color: #777777;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 1.625em;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+}
+header #header-top {
+  border-bottom: 1px solid #777777;
+}
+header #header-top .header-top {
+  display: flex;
+  justify-content: space-between;
+}
+header #header-top .header-top span {
+  padding: 33px 0;
+  font-weight: 600;
+}
+header #header-top .header-top img {
+  padding: 20px 0;
+}
+header #header-top .header-top div {
+  display: flex;
+  align-items: center;
+}
+header #header-top .header-top div a span {
+  color: #222;
+  font-weight: 600;
+}
+header #header-top .header-top div .phone-image .fa-phone {
+  background-color: #f6214b;
+  color: #fff;
+  padding: 33px;
+  font-size: 18px;
+  font-weight: 700;
+}
+header #header-bottom .header-bottom {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+header #header-bottom .header-bottom nav ul {
+  display: flex;
+  gap: 30px;
+}
+header #header-bottom .header-bottom nav ul li a {
+  font-weight: 600;
+  font-size: 12px;
+  color: #222;
+}
+header #header-bottom .header-bottom .fa-bars {
+  display: none;
+  cursor: pointer;
+  font-size: 30px;
+}
+header #header-bottom .header-bottom .fa-xmark {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  header #header-top {
+    display: none;
+  }
+  header #header-bottom .header-bottom {
+    justify-content: flex-start;
+  }
+  header #header-bottom .header-bottom nav {
+    display: none;
+  }
+  header #header-bottom .header-bottom .fa-bars {
+    display: block;
+  }
+}
+
+#hero-banner {
+  background-size: cover;
+  background-position: center;
+  background-image: url("/Gym-Website/assets/images/header-bg.jpg");
+  height: 80vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  gap: 40px;
+  padding-top: 180px;
+}
+#hero-banner h1 {
+  font-size: 45px;
+  font-weight: 800;
+}
+
+#we-offer .we-offer {
+  padding: 80px 0;
+}
+#we-offer .we-offer .we-offer-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 50px 0;
+}
+#we-offer .we-offer .we-offer-top h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #222;
+}
+#we-offer .we-offer .we-offer-bottom {
+  display: flex;
+  gap: 30px;
+}
+#we-offer .we-offer .we-offer-bottom .we-offer-card {
+  border-radius: 10px;
+  gap: 30px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 20px 60px 0px rgba(246, 33, 75, 0.3);
+}
+#we-offer .we-offer .we-offer-bottom .we-offer-card img {
+  width: 60px;
+  height: 50px;
+}
+#we-offer .we-offer .we-offer-bottom .we-offer-card h4 {
+  font-size: 18px;
+  color: #222;
+}
+#we-offer .we-offer .we-offer-bottom .we-offer-card p {
+  text-align: center;
+}
+
+#calculate {
+  background-color: #f6214b;
+  color: white;
+  padding: 100px 0;
+}
+#calculate .calculate-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#calculate .calculate-bottom {
+  display: flex;
+  justify-content: center;
+}
+
+#top-courses {
+  padding: 80px 0;
+}
+#top-courses .top-courses-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+#top-courses .top-courses-top h1 {
+  font-size: 36px;
+  color: #222;
+}
+
+#top-courses {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+#top-courses .top-courses-top {
+  display: flex;
+  flex-direction: column;
+}
+#top-courses .top-courses-top input {
+  padding: 10px 15px;
+  width: 300px;
+}
+#top-courses #top-courses-bottom .top-courses-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+#top-courses #top-courses-bottom .top-courses-bottom .top-courses-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#top-courses #top-courses-bottom .top-courses-bottom .top-courses-card .card-img {
+  height: 150px;
+  position: relative;
+}
+#top-courses #top-courses-bottom .top-courses-bottom .top-courses-card .card-img img {
+  position: absolute;
+  z-index: -4;
+  width: 100%;
+}
+#top-courses #top-courses-bottom .top-courses-bottom .top-courses-card .card-img span {
+  position: absolute;
+  left: 20px;
+  bottom: 15px;
+  z-index: -2;
+  background-color: #f6214b;
+  padding: 15px 40px;
+  color: white;
+}
+#top-courses #top-courses-bottom .top-courses-bottom .top-courses-card .card-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 30px 0;
+}
+#top-courses #top-courses-bottom .top-courses-bottom .top-courses-card .card-text h4 {
+  font-size: 18px;
+  color: #222;
+}
+#top-courses #top-courses-bottom .top-courses-bottom .top-courses-card .card-text span {
+  color: #f6214b;
+  font-size: 18px;
+  font-weight: 600;
+}
+#top-courses #top-courses-bottom .top-courses-bottom .top-courses-card .fa-heart {
+  font-size: 20px;
+  color: red;
+}
+
+#add-course {
+  padding: 200px;
+  display: flex;
+  justify-content: center;
+}
+#add-course form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  gap: 20px;
+  background-color: beige;
+}
+#add-course form input {
+  padding: 10px 15px;
+}
+#add-course form button {
+  padding: 10px;
+  background-color: crimson;
+  color: white;
+  font-weight: 600;
+}
+
+#details-section {
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 100px;
+}
+#details-section h1 {
+  color: black;
+  font-size: 40px;
+  font-weight: 600;
+}
+#details-section .top-courses-bottom {
+  padding: 80px 0;
+}
+
+footer .footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+footer .footer .footer-icons {
+  display: flex;
+  gap: 15px;
+}
+footer .footer .footer-icons a {
+  background-color: #111111;
+  padding: 12px 16px;
+  color: #cccccc;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,63 @@
+footer {
+   
+
+.footer {
+    padding: 120px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+gap: 30px;
+.footer-box {
+    h4 {
+        font-weight: 900;
+    }
+    p {
+        color: #737373;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        
+            a {
+                color: #999999;
+                width: max-content;
+                .fa-brands {
+                 
+                }
+            }
+        
+    }
+    img {
+        width: 250px;
+    }
+    h5 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .cart {
+        padding: 5px 15px;
+        background-color: black;
+        color: white;
+        width: max-content;
+        font-size: 12px;
+        font-weight: 900;
+        border: 2px solid black;
+        transition: all 0.3s;
+        &:hover {
+            background-color: transparent;
+            color: black;
+        }
+    }
+
+    &:nth-child(4) {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+}
+.copyright {
+    text-align: center;
+    color: #999999;
+}
+}

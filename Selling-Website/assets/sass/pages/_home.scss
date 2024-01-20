@@ -1,0 +1,193 @@
+#hero {
+   
+    background-color: rgba(0, 0, 0, 0.5);
+     background-position: center;
+     background-size: cover;
+    background-attachment: fixed;
+    background-image: url("/Selling-Website/assets/images/hero_2.jpg");
+    .hero {
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 200px 0;
+color: white;
+width: 50%;
+
+h1 {
+    font-size: 80px;
+    font-weight: 900;
+}
+p {
+    padding-bottom: 70px;
+    font-size: 20px;
+}
+
+    div {
+        .first {
+            padding: 20px 40px;
+            border: 2px solid white;
+            color: white;
+            background-color: transparent;
+transition: all 0.3s;
+            &:hover {
+                background-color: white;
+                color: #000000;
+            }
+        }
+        .second {
+            padding: 20px 40px;
+            border: 2px solid white;
+            color: black;
+background-color: white;
+transition: all 0.3s;
+&:hover {
+    background-color: transparent;
+    color: white;
+}
+        }
+    }
+    }
+}
+
+#products {
+    #products-top {
+        .products-top {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 80px 0;
+            h5 {
+               font-size: 13px;
+               color: #adb5bd;
+               font-weight: 700;
+            }
+            h1 {
+                font-size: 40px;
+                color: #000000;
+                font-weight: 900;
+
+            }
+            p {
+              font-size: 16px;
+              color: #808080;
+            }
+        }
+    }
+    #products-bottom {
+        .products-bottom {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            .product-card {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                .card-img {
+                    width: 100%;
+                    img {
+                        width: 100%;
+                    }
+                }
+                h4 {
+                    font-size: 18px;
+                    color: #000000;
+                    font-weight: 380;
+                }
+                .count-div {
+                    display: flex;
+                    gap: 20px;
+                    span {
+                        word-spacing: 10px;
+                        .fa-star {
+                            color: orange;
+                        }
+                        .fa-heart {
+                            color: #adb5bd;
+                        }
+                    }
+                }
+                p {
+                    font-size: 13px;
+                    color: #808080;
+                }
+                .buttons-div {
+                    a {
+                        padding: 5px 20px;
+                        border: 1px solid black;
+                        &:nth-child(1) {
+                            background-color: #000000;
+                            color: white;
+                            transition: all 0.3s;
+            &:hover {
+                background-color: transparent;
+                color: #000000;
+            }
+                    }
+                        &:nth-child(2) {
+                          background-color: white;
+                          color: #000000;
+
+                          transition: all 0.3s;
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+#about-us {
+    .about-us {
+        padding: 80px 0;
+        display: flex;
+        justify-content: space-between;
+        gap: 100px;
+
+        .about-us-left {
+            width: 60%;
+            height: 90vh;
+            background-image: url("/Selling-Website/assets/images/about_1.jpg");
+        }
+        .about-us-right {
+            width: 37%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+         
+            h4 {
+                font-size: 13px;
+                color: #adb5bd;
+                font-weight: 700;
+            }
+            h1 {
+                font-size: 40px;
+                font-weight: 900;
+            }
+            p {
+                font-size: 16px;
+                color: #808080;
+                padding-bottom: 20px;
+            }
+            a {
+                font-weight: 600;
+                font-size: 16px;
+                padding: 3px 20px;
+                background-color: #000000;
+                color: white;
+                width: max-content;
+                transition: all 0.3s;
+                border: 2px solid black;
+                &:hover {
+                    background-color: white;
+                    color: #000000;
+                }
+
+            }
+        }
+    }
+}

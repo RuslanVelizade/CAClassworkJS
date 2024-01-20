@@ -1,0 +1,159 @@
+#hero-banner {
+    background-size: cover;
+    background-position: center;
+    background-image: url("/Gym-Website/assets/images/header-bg.jpg");
+height: 80vh;
+color: white;
+display: flex;
+flex-direction: column;
+justify-self: center;
+align-items: center;
+gap: 40px;
+padding-top: 180px;
+h1 {
+    font-size: 45px;
+    font-weight: 800;
+}
+}
+
+#we-offer {
+    .we-offer {
+        padding: 80px 0;
+        .we-offer-top {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            padding: 50px 0;
+            h2 {
+                font-size: 36px;
+                font-weight: 600;
+                color: #222;
+            }
+        }
+        .we-offer-bottom {
+            display: flex;
+            gap: 30px;
+            .we-offer-card {
+                border-radius: 10px;
+                gap: 30px;
+                padding: 40px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                box-shadow: 0px 20px 60px 0px rgba(246, 33, 75, 0.3);
+                img {
+                    width: 60px;
+                   height: 50px;
+                }
+                h4 {
+                    font-size: 18px;
+                    color: #222;
+                }
+                p {
+                    text-align: center;
+                }
+
+
+            }
+        }
+    }
+            }
+
+            #calculate {
+                background-color: #f6214b;
+                color: white;
+                padding: 100px 0;
+                .calculate-top {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .calculate-bottom {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+
+            #top-courses {
+                padding: 80px 0;
+                .top-courses-top{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 30px;
+                    h1 {
+                        font-size: 36px;
+                        color: #222;
+                    }
+                }
+            }
+
+            #top-courses {
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                .top-courses-top {
+                    display: flex;
+                    flex-direction: column;
+                    input {
+                        padding: 10px 15px;
+                        width: 300px;
+                    }
+                }
+                #top-courses-bottom {
+                    .top-courses-bottom {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 30px;
+                    .top-courses-card 
+                    {
+                        display: flex;
+                        flex-direction: column;
+                        
+                        position: relative;
+                        .card-img {
+                            height: 150px;
+                            position: relative;
+                            img {
+                                position: absolute;
+                                z-index: -4;
+                                width: 100%;
+                            }
+                            span {
+                                position: absolute;
+                                left: 20px;
+                                bottom: 15px;
+                                z-index: -2;
+                                background-color: #f6214b;
+                                padding: 15px 40px;
+                                color: white;
+                            }
+                        }
+                        .card-text {
+                            display: flex;
+                            justify-content: space-between;
+                       align-items: center;
+                            background-color: white;
+                        padding: 30px 0;
+                        h4 {
+                            font-size: 18px;
+                            color: #222;
+                        }
+                        span {
+                            color: #f6214b;
+                            font-size: 18px;
+                            font-weight: 600;
+                        }
+                        
+                        }
+                        .fa-heart {
+                            font-size: 20px;
+                            color: red;
+                         }
+                    }
+                    }
+                }
+            }
+        
+        

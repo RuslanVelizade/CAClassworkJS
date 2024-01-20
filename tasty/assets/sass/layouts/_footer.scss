@@ -1,0 +1,31 @@
+footer {
+  background: #27272b;
+  .footer {
+    .footer-top {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      padding: 100px 0;
+    }
+
+    .footer-bottom {
+        width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 50px 0;
+      p {
+        text-align: center;
+        a{
+          color: #8b8b92;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 767px){
+    .footer {
+      .footer-top {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+}

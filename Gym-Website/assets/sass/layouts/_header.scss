@@ -1,0 +1,89 @@
+header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    #header-top {
+        border-bottom: 1px solid #777777;
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            
+            span {
+                padding: 33px 0;
+                    font-weight: 600;
+                
+                
+            }
+            img {
+                padding: 20px 0;
+            }
+            div {
+                display: flex;
+                align-items: center;
+                a {
+                    span {
+                        color: #222;
+    font-weight: 600;
+                    }
+                }
+                .phone-image {
+                    
+                    .fa-phone {
+                        background-color: #f6214b;
+                        color: #fff;
+                        padding: 33px;
+                        font-size: 18px;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+
+    #header-bottom {
+        .header-bottom {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+            nav {
+                ul {
+                    display: flex;
+                    gap: 30px;
+                    li {
+                        a {
+                            font-weight: 600;
+    font-size: 12px;
+    color: #222;
+    
+                        }
+                    }
+                }
+            }
+            .fa-bars{
+                display: none;
+            cursor: pointer;
+                font-size: 30px;
+            }
+            .fa-xmark {
+                display: none;
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        #header-top {
+            display: none;
+        }
+        #header-bottom {
+            .header-bottom {
+                justify-content: flex-start;
+                nav {
+                    display: none;
+                }
+                .fa-bars {
+                    display: block;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "status": "Course Available",
+      "title": "Running Classes",
+      "price": "275",
+      "imgUrl": "https://preview.colorlib.com/theme/gym/img/c1.jpg"
+    },
+    {
+      "id": 3,
+      "status": "Course Available",
+      "title": "Body Combat Classes",
+      "price": "225",
+      "imgUrl": "https://preview.colorlib.com/theme/gym/img/c3.jpg"
+    },
+    {
+      "id": 4,
+      "status": "Course Available",
+      "title": "Organic Yoga Classes",
+      "price": "300",
+      "imgUrl": "https://preview.colorlib.com/theme/gym/img/c4.jpg"
+    },
+    {
+      "id": 5,
+      "status": "Course Available",
+      "title": "Raw Fitness Classes",
+      "price": "500",
+      "imgUrl": "https://preview.colorlib.com/theme/gym/img/c5.jpg"
+    },
+    {
+      "id": 6,
+      "status": "Course Available",
+      "title": "Body Combat Classes",
+      "price": "275",
+      "imgUrl": "https://preview.colorlib.com/theme/gym/img/c6.jpg"
+    },
+    {
+      "title": "Qui laudantium beat",
+      "status": "course available",
+      "price": "96",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjAAhKYsaPi6RWf7JFRYQq5qrfeI8_EMEHnw&usqp=CAU",
+      "id": 7
+    },
+    {
+      "title": "test",
+      "status": "course available",
+      "price": "80",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjAAhKYsaPi6RWf7JFRYQq5qrfeI8_EMEHnw&usqp=CAU",
+      "id": 8
+    },
+    {
+      "title": "test",
+      "status": "course available",
+      "price": "80",
+      "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjAAhKYsaPi6RWf7JFRYQq5qrfeI8_EMEHnw&usqp=CAU",
+      "id": 9
+    }
+  ]
+}

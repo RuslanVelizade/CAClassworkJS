@@ -1,0 +1,207 @@
+{
+  "menus": [
+    {
+      "id": "1",
+      "name": "Ruslan",
+      "description": "with wild mushrooms and asparagus",
+      "price": "9.00",
+      "category": "breakfast"
+    },
+    {
+      "id": "2",
+      "name": "Scrambled Eggs with ham",
+      "description": "with wild mushrooms and asparagus",
+      "price": "9.00",
+      "category": "breakfast"
+    },
+    {
+      "id": "3",
+      "name": "Scrambled Eggs in Puff Pastry",
+      "description": "with wild mushrooms and asparagus",
+      "price": "11.00",
+      "category": "breakfast"
+    },
+    {
+      "id": "4",
+      "name": "Scrambled Eggs in Puff Pastry",
+      "description": "with wild mushrooms and asparagus",
+      "price": "11.00",
+      "category": "breakfast"
+    },
+    {
+      "id": "5",
+      "name": "Eggs Benedict",
+      "description": "with wild mushrooms and asparagus",
+      "price": "6.00",
+      "category": "breakfast"
+    },
+    {
+      "id": "6",
+      "name": "Eggs Benedict",
+      "description": "with wild mushrooms and asparagus",
+      "price": "6.00",
+      "category": "breakfast"
+    },
+    {
+      "id": "7",
+      "name": "Soft-Boiled Organic Egg",
+      "description": "with wild mushrooms and asparagus",
+      "price": "8.00",
+      "category": "breakfast"
+    },
+    {
+      "id": "8",
+      "name": "Soft-Boiled Organic Egg",
+      "description": "with wild mushrooms and asparagus",
+      "price": "8.00",
+      "category": "breakfast"
+    },
+    {
+      "id": "9",
+      "name": "Scrambled Eggs with ham",
+      "description": "with wild mushrooms and asparagus",
+      "price": "9.00",
+      "category": "brunch"
+    },
+    {
+      "id": "10",
+      "name": "Scrambled Eggs with ham",
+      "description": "with wild mushrooms and asparagus",
+      "price": "9.00",
+      "category": "brunch"
+    },
+    {
+      "id": "11",
+      "name": "Scrambled Eggs in Puff Pastry",
+      "description": "with wild mushrooms and asparagus",
+      "price": "11.00",
+      "category": "brunch"
+    },
+    {
+      "id": "12",
+      "name": "Scrambled Eggs in Puff Pastry",
+      "description": "with wild mushrooms and asparagus",
+      "price": "11.00",
+      "category": "brunch"
+    },
+    {
+      "id": "13",
+      "name": "Eggs Benedict",
+      "description": "with wild mushrooms and asparagus",
+      "price": "6.00",
+      "category": "brunch"
+    },
+    {
+      "id": "14",
+      "name": "Eggs Benedict",
+      "description": "with wild mushrooms and asparagus",
+      "price": "6.00",
+      "category": "brunch"
+    },
+    {
+      "id": "15",
+      "name": "Soft-Boiled Organic Egg",
+      "description": "with wild mushrooms and asparagus",
+      "price": "8.00",
+      "category": "brunch"
+    },
+    {
+      "id": "16",
+      "name": "Scrambled Eggs with ham",
+      "description": "with wild mushrooms and asparagus",
+      "price": "9.00",
+      "category": "lunch"
+    },
+    {
+      "id": "17",
+      "name": "Scrambled Eggs with ham",
+      "description": "with wild mushrooms and asparagus",
+      "price": "9.00",
+      "category": "lunch"
+    },
+    {
+      "id": "18",
+      "name": "Scrambled Eggs in Puff Pastry",
+      "description": "with wild mushrooms and asparagus",
+      "price": "11.00",
+      "category": "lunch"
+    },
+    {
+      "id": "19",
+      "name": "Scrambled Eggs in Puff Pastry",
+      "description": "with wild mushrooms and asparagus",
+      "price": "11.00",
+      "category": "lunch"
+    },
+    {
+      "id": "20",
+      "name": "Eggs Benedict",
+      "description": "with wild mushrooms and asparagus",
+      "price": "6.00",
+      "category": "lunch"
+    },
+    {
+      "id": "21",
+      "name": "Eggs Benedict",
+      "description": "with wild mushrooms and asparagus",
+      "price": "6.00",
+      "category": "lunch"
+    },
+    {
+      "id": "22",
+      "name": "Soft-Boiled Organic Egg",
+      "description": "with wild mushrooms and asparagus",
+      "price": "8.00",
+      "category": "lunch"
+    },
+    {
+      "id": "23",
+      "name": "Scrambled Eggs with ham",
+      "description": "with wild mushrooms and asparagus",
+      "price": "9.00",
+      "category": "dinner"
+    },
+    {
+      "id": "24",
+      "name": "Scrambled Eggs with ham",
+      "description": "with wild mushrooms and asparagus",
+      "price": "9.00",
+      "category": "dinner"
+    },
+    {
+      "id": "25",
+      "name": "Scrambled Eggs in Puff Pastry",
+      "description": "with wild mushrooms and asparagus",
+      "price": "11.00",
+      "category": "dinner"
+    },
+    {
+      "id": "26",
+      "name": "Scrambled Eggs in Puff Pastry",
+      "description": "with wild mushrooms and asparagus",
+      "price": "11.00",
+      "category": "dinner"
+    },
+    {
+      "id": "27",
+      "name": "Eggs Benedict",
+      "description": "with wild mushrooms and asparagus",
+      "price": "6.00",
+      "category": "dinner"
+    },
+    {
+      "id": "28",
+      "name": "Eggs Benedict",
+      "description": "with wild mushrooms and asparagus",
+      "price": "6.00",
+      "category": "dinner"
+    },
+    {
+      "name": "Reprehenderit numqua",
+      "description": "Illum commodi vel e",
+      "price": "51",
+      "category": "Mollit sint commodo ",
+      "id": "HlKzHlm"
+    }
+  ]
+}

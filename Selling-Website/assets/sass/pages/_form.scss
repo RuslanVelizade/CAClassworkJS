@@ -1,0 +1,64 @@
+#add-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        background-color: beige;
+        gap: 20px;
+        input {
+            padding: 10px 15px;
+            
+        }
+        button {
+            padding: 10px 15px;
+            background-color: cadetblue;
+            color: white;
+            font-weight: 600;
+        }
+    }
+}
+.control-cont {
+    text-align: center;
+    padding: 50px 0;
+    input {
+        padding: 10px 15px;
+    }
+    #sortBtn {
+        padding: 5px 10px;
+        background-color: green;
+        color: white;
+        font-weight: 600;
+    }
+    #sortZABtn {
+        padding: 5px 10px;
+        background-color:cornflowerblue;
+        color: white;
+        font-weight: 600;
+    }
+}
+table {
+ 
+    width: 100%;
+    tbody {
+        tr {
+            td {
+                text-align: center;
+                img {
+                    width: 50px;
+                }
+                .fa-trash {
+                    color: red;
+                }
+            }
+        }
+    }
+}
+
+table, th, td {
+    border: 1px solid black;
+}

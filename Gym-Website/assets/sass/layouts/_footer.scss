@@ -1,0 +1,19 @@
+footer {
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0;
+        .footer-icons {
+            display: flex;
+            gap: 15px;
+            a {
+                background-color: #111111;
+                    padding: 12px 16px;
+                    color: #cccccc;
+                i {
+                   
+                }
+            }
+        }
+    }
+}

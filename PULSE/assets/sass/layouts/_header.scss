@@ -1,0 +1,37 @@
+header {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    display: flex;
+     justify-content: space-between;
+     align-items: center;
+     color: white;
+     
+     h1 {
+        padding: 30px 60px;
+        span {
+            color: #ffc515;
+        }
+     }
+
+     nav {
+        padding: 30px 60px;
+        ul {
+            display: flex;
+            gap: 30px;
+            li {
+                a {
+                    color: white;
+                }
+            }
+        }
+     }
+
+     .header-right {
+        padding: 30px 60px;
+        display: flex;
+        p {
+            color: #ffc515;
+        }
+     }
+}
